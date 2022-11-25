@@ -1,6 +1,6 @@
 // Subtract One Number from Another with JavaScript - exercise 12
 
-/*
+/*  Example
     const myVar = 12 - 6;
 
     myVar would have the value 6.
