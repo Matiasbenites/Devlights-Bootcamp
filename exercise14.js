@@ -1,5 +1,5 @@
 // Divide One Number by Another with JavaScript - exercise 14
-
+// @Author Benites, Matias M. 2022
 /*
     Example
     const myVar = 16 / 2;

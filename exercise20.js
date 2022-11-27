@@ -1,5 +1,5 @@
 // Finding a Remainder in JavaScript - exercise 20
-
+// @Author Benites, Matias M. 2022
 /*
 The remainder operator % gives the remainder of the division of two numbers.
 

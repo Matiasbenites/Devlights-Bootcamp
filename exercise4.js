@@ -1,5 +1,5 @@
 // Assigning the Value of One Variable to Another - exercise 4
-
+// @Author Benites, Matias M. 2022
 /* Assign the contents of a to variable b.
 
 Setup

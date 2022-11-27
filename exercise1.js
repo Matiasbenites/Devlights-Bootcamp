@@ -1,4 +1,5 @@
 ///  Comment Your JavaScript Code - exercise 1
+// @Author Benites, Matias M. 2022
 
 console.log("Hi everyone")//This is an in-line comment just for example.
 

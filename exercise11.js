@@ -1,5 +1,5 @@
 // Add Two Numbers with JavaScript - exercise 11
-
+// @Author Benites, Matias M. 2022
 /*  Example
     const myVar = 5 + 10;
 

@@ -1,5 +1,5 @@
 // Compound Assignment With Augmented Multiplication - exercise 23
-
+// @Author Benites, Matias M. 2022
 /* 
     
 The *= operator multiplies a variable by a number.

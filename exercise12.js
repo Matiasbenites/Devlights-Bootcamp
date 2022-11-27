@@ -1,5 +1,5 @@
 // Subtract One Number from Another with JavaScript - exercise 12
-
+// @Author Benites, Matias M. 2022
 /*  Example
     const myVar = 12 - 6;
 

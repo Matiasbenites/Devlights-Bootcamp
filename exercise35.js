@@ -1,5 +1,5 @@
 // Use Bracket Notation to Find the Nth Character in a String - exercise 35
-
+// @Author Benites, Matias M. 2022
 /* 
 You can also use bracket notation to get the character at other positions within a string.
 

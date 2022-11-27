@@ -1,5 +1,5 @@
 // Constructing Strings with Variables - exercise 30
-
+// @Author Benites, Matias M. 2022
 /* 
 Sometimes you will need to build a string. By using the concatenation operator (+), 
 you can insert one or more variables into a string you're building.

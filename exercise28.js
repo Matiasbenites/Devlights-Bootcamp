@@ -1,5 +1,5 @@
 // Concatenating Strings with Plus Operator - exercise 28
-
+// @Author Benites, Matias M. 2022
 /* 
 In JavaScript, when the + operator is used with a String value, 
 it is called the concatenation operator. 

@@ -1,5 +1,5 @@
 // Use Bracket Notation to Find the Last Character in a String - exercise 36
-
+// @Author Benites, Matias M. 2022
 /* 
 In order to get the last letter of a string, you can subtract one from the string's length.
 

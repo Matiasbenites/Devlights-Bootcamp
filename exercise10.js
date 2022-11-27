@@ -1,5 +1,5 @@
 // Declare a Read-Only Variable with the const Keyword
-
+// @Author Benites, Matias M. 2022
 /*
 Change the code so that all variables are declared using let or const. 
 Use let when you want the variable to change, and const when you want the variable to remain constant. 

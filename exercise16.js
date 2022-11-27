@@ -1,5 +1,5 @@
 // Decrement a Number with JavaScript - exercise 16
-
+// @Author Benites, Matias M. 2022
 /*  Example
     Change the code to use the -- operator on myVar.
 

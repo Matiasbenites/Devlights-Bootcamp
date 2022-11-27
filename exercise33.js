@@ -1,5 +1,5 @@
 // Use Bracket Notation to Find the First Character in a String - exercise 33
-
+// @Author Benites, Matias M. 2022
 /*
 
 Bracket notation is a way to get a character at a specific index within a string.

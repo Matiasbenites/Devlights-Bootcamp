@@ -1,5 +1,5 @@
 // Increment a Number with JavaScript - exercise 15
-
+// @Author Benites, Matias M. 2022
 /* 
     Change the code to use the ++ operator on myVar.
 

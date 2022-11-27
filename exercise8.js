@@ -1,5 +1,5 @@
 // Understanding Case Sensitivity in Variables - exercise 8
-
+// @Author Benites, Matias M. 2022
 /*
     Modify the existing declarations and assignments so their names use camelCase.
     Do not create any new variables.

@@ -1,5 +1,5 @@
 // Find the Length of a String - exercise 32
-
+// @Author Benites, Matias M. 2022
 /* 
 
 You can find the length of a String value by writing .length after the string variable or string literal.

@@ -1,5 +1,5 @@
 // Multiply Two Numbers with JavaScript - exercise 13
-
+// @Author Benites, Matias M. 2022
 
 /*  Example
     const myVar = 13 * 13;
