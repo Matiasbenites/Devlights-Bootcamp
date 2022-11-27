@@ -4,3 +4,5 @@
 <p align="center">
   <img src="https://user-images.githubusercontent.com/79936247/204143490-245a66e3-08c4-4ffe-a209-a8087d4e1daa.png" />
 </p>
+
+<p>Course content:</p>
