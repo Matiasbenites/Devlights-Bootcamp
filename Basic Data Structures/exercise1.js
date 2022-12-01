@@ -46,4 +46,4 @@ Your array should contain at least one string, one number, and one boolean.
 let yourArray;// Change this line
 */
 
-let yourArray = ["string", 1, true, undefined, null]; 
+let yourArray = ["string", 1, true, undefined, null];
