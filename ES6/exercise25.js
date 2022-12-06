@@ -12,5 +12,4 @@ In the following code, import the default export from the math_functions.js file
 
 */
 import subtract from "./math_functions.js";
-
 subtract(7, 4);
