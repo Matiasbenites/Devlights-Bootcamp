@@ -2,7 +2,8 @@
 // @Author Benites, Matias M. 2022
 
 /* 
-You can specify the lower and upper number of patterns with quantity specifiers using curly brackets. Sometimes you only want to specify the lower number of patterns with no upper limit.
+You can specify the lower and upper number of patterns with quantity specifiers using curly brackets. 
+Sometimes you only want to specify the lower number of patterns with no upper limit.
 
 To only specify the lower number of patterns, keep the first number followed by a comma.
 
