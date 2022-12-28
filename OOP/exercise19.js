@@ -1,49 +1,52 @@
-// Reset an Inherited Constructor Property - exercise 19
+// Set the Child's Prototype to an Instance of the Parent - exercise 19
 // @Author Benites, Matias M. 2022
 
 /* 
-When an object inherits its prototype from another object, it also inherits the supertype's constructor property.
+In the previous challenge you saw the first step for inheriting behavior from the supertype (or parent) Animal: 
+making a new instance of Animal.
 
-Here's an example:
+This challenge covers the next step: set the prototype of the subtype (or child)—in this case, Bird—to be an instance of Animal.
 
-function Bird() { }
 Bird.prototype = Object.create(Animal.prototype);
-let duck = new Bird();
-duck.constructor
 
-But duck and all instances of Bird should show that they were constructed by Bird and not Animal. 
-To do so, you can manually set the constructor property of Bird to the Bird object:
+Remember that the prototype is like the "recipe" for creating an object. In a way, the recipe for Bird now includes all 
+the key "ingredients" from Animal.
 
-Bird.prototype.constructor = Bird;
-duck.constructor
+let duck = new Bird("Donald");
+duck.eat();
 
->Fix the code so duck.constructor and beagle.constructor return their respective constructors.
+duck inherits all of Animal's properties, including the eat method.
+
+>Modify the code so that instances of Dog inherit from Animal.
 function Animal() { }
-function Bird() { }
-function Dog() { }
 
-Bird.prototype = Object.create(Animal.prototype);
-Dog.prototype = Object.create(Animal.prototype);
+Animal.prototype = {
+  constructor: Animal,
+  eat: function() {
+    console.log("nom nom nom");
+  }
+};
+
+function Dog() { }
 
 // Only change code below this line
 
 
-
-let duck = new Bird();
 let beagle = new Dog();
 */
 function Animal() {}
-function Bird() {}
+
+Animal.prototype = {
+  constructor: Animal,
+  eat: function () {
+    console.log("nom nom nom");
+  },
+};
+
 function Dog() {}
 
-Bird.prototype = Object.create(Animal.prototype);
 Dog.prototype = Object.create(Animal.prototype);
 
-let duck = new Bird();
 let beagle = new Dog();
 
-Bird.prototype.constructor = Bird;
-duck.constructor;
-
-Dog.prototype.constructor = Dog;
-beagle.constructor;
+beagle.eat();

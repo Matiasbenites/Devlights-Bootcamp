@@ -2,9 +2,9 @@
 // @Author Benites, Matias M. 2022
 
 /* 
-
-
-There is one crucial side effect of manually setting the prototype to a new object. It erases the constructor property! This property can be used to check which constructor function created the instance, but since the property has been overwritten, it now gives false results:
+There is one crucial side effect of manually setting the prototype to a new object. 
+It erases the constructor property! This property can be used to check which constructor function created the instance, 
+but since the property has been overwritten, it now gives false results:
 
 duck.constructor === Bird;
 duck.constructor === Object;

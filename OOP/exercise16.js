@@ -1,100 +1,48 @@
-// Use Inheritance So You Don't Repeat Yourself - exercise 16
+// Understand the Prototype Chain - exercise 16
 // @Author Benites, Matias M. 2022
 
 /* 
-There's a principle in programming called Don't Repeat Yourself (DRY). 
-The reason repeated code is a problem is because any change requires fixing code in multiple places. 
-This usually means more work for programmers and more room for errors.
+All objects in JavaScript (with a few exceptions) have a prototype. Also, an object’s prototype itself is an object.
 
-Notice in the example below that the describe method is shared by Bird and Dog:
-
-Bird.prototype = {
-  constructor: Bird,
-  describe: function() {
-    console.log("My name is " + this.name);
-  }
-};
-
-Dog.prototype = {
-  constructor: Dog,
-  describe: function() {
-    console.log("My name is " + this.name);
-  }
-};
-
-The describe method is repeated in two places. The code can be edited to follow the DRY principle by creating a 
-supertype (or parent) called Animal:
-
-function Animal() { };
-
-Animal.prototype = {
-  constructor: Animal, 
-  describe: function() {
-    console.log("My name is " + this.name);
-  }
-};
-
-Since Animal includes the describe method, you can remove it from Bird and Dog:
-
-Bird.prototype = {
-  constructor: Bird
-};
-
-Dog.prototype = {
-  constructor: Dog
-};
-
->The eat method is repeated in both Cat and Bear. Edit the code in the spirit of DRY by moving the eat method to the Animal supertype.
-function Cat(name) {
+function Bird(name) {
   this.name = name;
 }
 
-Cat.prototype = {
-  constructor: Cat,
-  eat: function() {
-    console.log("nom nom nom");
-  }
-};
+typeof Bird.prototype;
 
-function Bear(name) {
+Because a prototype is an object, a prototype can have its own prototype! In this case, the prototype of Bird.prototype
+is Object.prototype:
+
+Object.prototype.isPrototypeOf(Bird.prototype);
+
+How is this useful? You may recall the hasOwnProperty method from a previous challenge:
+
+let duck = new Bird("Donald");
+duck.hasOwnProperty("name");
+
+The hasOwnProperty method is defined in Object.prototype, which can be accessed by Bird.prototype, which can then be accessed by duck. 
+This is an example of the prototype chain. In this prototype chain, Bird is the supertype for duck, while duck is the subtype. 
+Object is a supertype for both Bird and duck. Object is a supertype for all objects in JavaScript. 
+Therefore, any object can use the hasOwnProperty method.
+
+>Modify the code to show the correct prototype chain.
+function Dog(name) {
   this.name = name;
 }
 
-Bear.prototype = {
-  constructor: Bear,
-  eat: function() {
-    console.log("nom nom nom");
-  }
-};
+let beagle = new Dog("Snoopy");
 
-function Animal() { }
+Dog.prototype.isPrototypeOf(beagle);  // yields true
 
-Animal.prototype = {
-  constructor: Animal,
-
-};
+// Fix the code below so that it evaluates to true
+???.isPrototypeOf(Dog.prototype);
 */
-function Cat(name) {
+function Dog(name) {
   this.name = name;
 }
 
-Cat.prototype = {
-  constructor: Cat,
-};
+let beagle = new Dog("Snoopy");
 
-function Bear(name) {
-  this.name = name;
-}
+Dog.prototype.isPrototypeOf(beagle);
 
-Bear.prototype = {
-  constructor: Bear,
-};
-
-function Animal() {}
-
-Animal.prototype = {
-  constructor: Animal,
-  eat: function () {
-    console.log("nom nom nom");
-  },
-};
+Object.prototype.isPrototypeOf(Dog.prototype);
