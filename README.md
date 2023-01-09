@@ -62,6 +62,8 @@ This is it — time to put your new JavaScript skills to work. These projects ar
 Complete these 5 JavaScript projects to earn the JavaScript Algorithms and Data Structures certification.
 
 ## Finally, after you've done all exercises you'll be able to claim your certification from [freecodecamp](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/)
+
+# Finish's certification 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/79936247/204144174-0d3fba3d-2bca-4fb5-bd68-5463dc826eb7.png" />
+  <img src="./Certificate.png" />
 </p>
